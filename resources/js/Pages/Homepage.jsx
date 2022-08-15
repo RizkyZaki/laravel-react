@@ -8,7 +8,7 @@ export default function Homepage(props) {
     return (
         <div className="min-h-screen bg-slate-700 ">
             <Head title={props.title} />
-            <Navbar />
+            <Navbar user={props.auth.user} />
             <div className="mt-20 flex justify-center flex-col lg:flex-row lg:flex-wrap lg:items-stretch items-center gap-4 p-4">
                 <NewsLists news={props.news.data} />
             </div>
